@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>-Usuario falhou-</title>
+        <meta charset="utf-8" /> <!-- seta o tipo de caractere que vamos ter-->
+        <style>
+            .main_container{
+                text-align: center;
+                border: 1px solid white;
+                border-radius: 5px ;
+                width: 800px;  
+                margin: auto;
+                margin-top: 50px;
+                padding: 10px;
+
+                color: white;
+            }
+        </style>
+    </head>
+
+
+    <body background="fundo_tela_inicial.jpg">
+        <div class="main_container">    
+            <h1>Usuário ou senha errado</h1>
+        
+            <form method="GET" action="/" accept-charset="utf-8" autocomplete="off">
+                <button type="submit">TENTAR DE NOVO</button>
+            
+                <button type="button" onclick="Evento()">Dica</button>
+ 
+                <script>
+                    function Evento(){
+                    alert('se for a luana a senha e 123')
+                    }   
+                </script>
+            </form>
+        </div>
+    </body>
+</html>

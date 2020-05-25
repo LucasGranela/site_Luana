@@ -4,22 +4,57 @@
     <head>
         <title>- Página de login -</title>
         <meta charset="utf-8" /> <!-- seta o tipo de caractere que vamos ter-->
+        <style>
+            .main_container{
+                text-align: center;
+                border: 1px solid white;
+                border-radius: 5px ;
+                width: 800px;  
+                margin: auto;
+                margin-top: 50px;
+                padding: 10px;
 
+                color: white;
+            }
+            
+            .login{
+                display: flex;
+                flex-direction: column;
+                
+            }
+
+            label, input, button{
+                margin: 2px;
+            }
+            #button_login{
+                background-color: white;
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: bold; 
+                transition-duration: 0.2s;    
+            }
+            #button_login:hover{
+                transition-duration: 0.2s;
+                transform: scale(1.10);    
+            }
+        </style>
     </head>
-    <body>
-        
-        <h1>Bem vindo, faça seu login</h1>
-        
-        <form method="POST" action="/login" accept-charset="utf-8" autocomplete="off">
-            <label>Usuário</label>
-            <input type="text" name="user" /> 
+    <body background="fundo_tela_inicial.jpg">
+        <div class="main_container">
+            <h1>Bem vindo, faça seu login</h1>
+            
+            <div class="login">
+                <form method="POST" action="/login" accept-charset="utf-8" autocomplete="off">
+                    <label>Usuário:</label>
+                    <input type="text" name="user" /> 
 
-            <label>Senha</label>
-            <input type="password" name="pass" /> 
+                    <label>Senha:</label>
+                    <input type="password" name="pass" /> 
 
-            <button type="submit">Entrar</button>
-            <input type="submit" value="Entrar"/>
-        </form>
+                    <button id='button_login' type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
     
     </body>
 </html>
